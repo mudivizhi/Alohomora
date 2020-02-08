@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "312509343631",
+    "firebase_url": "https://alohomora-32e25.firebaseio.com",
+    "project_id": "alohomora-32e25",
+    "storage_bucket": "alohomora-32e25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312509343631:android:3ff35a3cf9abaac70fcdfa",
+        "android_client_info": {
+          "package_name": "com.mudivizhi.alohomora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312509343631-iun2n6ol9igm4qhejsa28i7hhj78eoqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mudivizhi.alohomora",
+            "certificate_hash": "dd85117dba09146824a755fe768c6d0d5f76be4c"
+          }
+        },
+        {
+          "client_id": "312509343631-5m5anm9p5mt26t1iq2754j21u5j0nook.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALhGHKV_jb8NwRhnu-FyVxFgMMKE19BPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312509343631-5m5anm9p5mt26t1iq2754j21u5j0nook.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
