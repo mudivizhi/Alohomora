@@ -35,7 +35,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void moveToNextActivity() {
@@ -44,4 +43,5 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
 }
