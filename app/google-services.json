@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "312509343631-c81rgd7rt85otkidja1d6q9arhqqever.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mudivizhi.alohomora",
+            "certificate_hash": "1ffb9f3da7274b8f5be65ef80414395f1a7d10bb"
+          }
+        },
+        {
           "client_id": "312509343631-iun2n6ol9igm4qhejsa28i7hhj78eoqi.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
