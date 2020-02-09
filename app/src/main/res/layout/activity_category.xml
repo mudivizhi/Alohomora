@@ -7,8 +7,8 @@
     <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
         android:theme="@style/ThemeOverlay.AppCompat.Dark"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/primaryColor"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient"
         xmlns:android="http://schemas.android.com/apk/res/android" />
 
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -18,16 +18,13 @@
     android:layout_height="match_parent"
     tools:context=".Category">
 
-
-
-
-
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
     <GridLayout
+        android:layout_marginTop="30dp"
         android:rowCount="12"
         android:columnCount="2"
         android:useDefaultMargins="true"
@@ -52,12 +49,12 @@
               android:layout_height="match_parent">
 
               <ImageView
-                  android:src="@drawable/swiggy"
+                  android:src="@drawable/amazon"
                   android:layout_width="80dp"
                   android:layout_height="80dp"/>
               <TextView
                   android:layout_marginTop="12dp"
-                  android:text="Swiggy"
+                  android:text="Amazon"
                   android:textColor="#6f6f6f"
                   android:textSize="18sp"
                   android:layout_width="wrap_content"
@@ -80,12 +77,40 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/zomato"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="Zomato"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/flipkart"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:text="Flipkart"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
@@ -136,40 +161,12 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/paytm"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
-                    android:textColor="#6f6f6f"
-                    android:textSize="18sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-        <androidx.cardview.widget.CardView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp">
-            <LinearLayout
-                android:orientation="vertical"
-                android:padding="16dp"
-                android:gravity="center"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/swiggy"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"/>
-                <TextView
-                    android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="Paytm"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
@@ -191,12 +188,12 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:src="@drawable/swiggy"
+                android:src="@drawable/myntra"
                 android:layout_width="80dp"
                 android:layout_height="80dp"/>
             <TextView
                 android:layout_marginTop="12dp"
-                android:text="Swiggy"
+                android:text="Myntra"
                 android:textColor="#6f6f6f"
                 android:textSize="18sp"
                 android:layout_width="wrap_content"
@@ -219,12 +216,12 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/bookmyshow"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="Bookmyshow"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
@@ -247,12 +244,12 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/makemytrip"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="makemytrip"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
@@ -275,12 +272,12 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/goibibo"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="Goibibo"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
@@ -303,18 +300,76 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/swiggy"
+                    android:src="@drawable/ola"
                     android:layout_width="80dp"
                     android:layout_height="80dp"/>
                 <TextView
                     android:layout_marginTop="12dp"
-                    android:text="Swiggy"
+                    android:text="Ola"
                     android:textColor="#6f6f6f"
                     android:textSize="18sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/zoomcar"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:text="Zoom car"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="12dp"
+            android:layout_margin="12dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/uber"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_marginTop="12dp"
+                    android:text="Uber"
+                    android:textColor="#6f6f6f"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
 
 
 
