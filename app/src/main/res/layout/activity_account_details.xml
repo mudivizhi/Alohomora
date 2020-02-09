@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountDetails"
+    android:background="@drawable/profilegradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/profilepic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Shyam Ganesh"
+            android:textColor="@color/primaryColor"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/primaryColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="First Name"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Shyam"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Last Name"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Ganesh"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Email ID"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="shyamvinayak@gmail.com"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_local_phone_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Phone"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:text="9876543210"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/darker_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="Edit Profile"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-10dp"
+            android:background="@drawable/btn"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="Change Password"
+            android:textColor="@color/secondaryColor"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

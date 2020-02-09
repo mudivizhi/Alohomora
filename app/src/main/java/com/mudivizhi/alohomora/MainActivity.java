@@ -11,6 +11,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button categorySelect;
+    Button profileSelect;
 
 
 
@@ -30,12 +31,21 @@ public class MainActivity extends AppCompatActivity {
         ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
 
         categorySelect = findViewById(R.id.selectCategoryButton);
-        categorySelect.setOnClickListener((view)->{moveToNextActivity();});
+        categorySelect.setOnClickListener((view)->{moveToCategoryActivity();});
+
+        profileSelect = findViewById(R.id.selectProfileButton);
+        profileSelect.setOnClickListener((view)->{moveToProfileActivity();});
+
 
     }
-    private void moveToNextActivity() {
+    private void moveToCategoryActivity() {
 
         Intent intent = new Intent(this,Category.class);
+        startActivity(intent);
+    }
+    private void moveToProfileActivity() {
+
+        Intent intent = new Intent(this,AccountDetails.class);
         startActivity(intent);
 
     }
