@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -40,16 +41,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/et_countryCode"
-                android:textSize="20sp"
-                android:hint="+91"
-                android:layout_width="70dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="40dp"
-                android:layout_height="wrap_content"/>
+            <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="IN" />
+
             <EditText
                 android:id="@+id/et_mobileNumber"
                 android:layout_width="200dp"
@@ -57,8 +59,20 @@
                 android:hint="9876543210"
                 android:textSize="20sp"
                 />
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
+        <TextView
+            android:id="@+id/state"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
 
         <ImageView
             android:layout_marginTop="20dp"

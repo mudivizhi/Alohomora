@@ -31,14 +31,11 @@
         tools:layout_editor_absoluteX="151dp"
         tools:layout_editor_absoluteY="267dp"
         tools:ignore="MissingConstraints" />
-    <Button
-        android:id="@+id/selectProfileButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Profile"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="267dp"
-        tools:ignore="MissingConstraints" />
 
+    <Button
+        android:text="Log out"
+        android:onClick="logOutCurrentUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
