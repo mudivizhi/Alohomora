@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -54,7 +56,6 @@ public class LoginActivity extends AppCompatActivity {
 
         signupLayout = findViewById(R.id.signup_layout);
         mobileSubmit = findViewById(R.id.iv_mobileSubmit);
-        //countryCodeSp = findViewById(R.id.sp_countryCode);
         mobileNumberEt = findViewById(R.id.et_mobileNumber);
         cpp = findViewById(R.id.ccp);
         progressBar = findViewById(R.id.progressBar);
@@ -82,19 +83,21 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //countryCode = countryCodeSp.getText().toString();
-                mobileNumber = mobileNumberEt.getText().toString();
-
-                if(validateInput(mobileNumber)){
-                    progressBar.setVisibility(View.VISIBLE);
-                    state.setText("Sending OTP...");
-                    state.setVisibility(View.VISIBLE);
-                    countryCode = cpp.getSelectedCountryCode();
-                    fullNumber = "+"+countryCode+mobileNumber;
-                    sendOTP(fullNumber);
-                }
+                validateAndSendOTP();
             }
         });
 
+    }
+    private void validateAndSendOTP(){
+        mobileNumber = mobileNumberEt.getText().toString();
+        if(validateInput(mobileNumber)){
+            progressBar.setVisibility(View.VISIBLE);
+            state.setText("Sending OTP...");
+            state.setVisibility(View.VISIBLE);
+            countryCode = cpp.getSelectedCountryCode();
+            fullNumber = "+"+countryCode+mobileNumber;
+            sendOTP(fullNumber);
+        }
     }
 
     @Override
@@ -157,6 +160,8 @@ public class LoginActivity extends AppCompatActivity {
     private void moveToNextActivity() {
         Intent intent = new Intent(this,OTPActivity.class);
         intent.putExtra("verificationID",verificationID);
+        intent.putExtra("phone",fullNumber);
+        intent.putExtra("token",token);
         startActivity(intent);
 
     }
@@ -185,5 +190,12 @@ public class LoginActivity extends AppCompatActivity {
         if (alreadyloggedAccount != null) {
             onLoggedIn(alreadyloggedAccount);
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        progressBar.setVisibility(View.INVISIBLE);
+        state.setVisibility(View.INVISIBLE);
     }
 }
