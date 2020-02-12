@@ -49,8 +49,7 @@
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-
-                android:src="@drawable/ic_person" />
+                app:srcCompat="@drawable/ic_person" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -93,7 +92,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
 
-                android:src="@drawable/ic_person" />
+                app:srcCompat="@drawable/ic_person" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -136,7 +135,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
 
-                android:src="@drawable/ic_email_black_24dp" />
+                app:srcCompat="@drawable/ic_email_black_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -179,7 +178,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
 
-                android:src="@drawable/ic_local_phone_black_24dp" />
+                app:srcCompat="@drawable/ic_local_phone_black_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
