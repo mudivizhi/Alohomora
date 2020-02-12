@@ -4,8 +4,6 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android">
-
-
 <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -337,6 +335,8 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/uber"
+            android:background="@android:drawable/btn_default"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_columnWeight="1"
@@ -364,9 +364,6 @@
                     android:layout_height="wrap_content"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
-
-
-
 
 
 
