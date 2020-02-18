@@ -52,8 +52,8 @@ public class Category extends Fragment {
         });
     }
     private void moveToSingleCategoryActivity() {
-        Intent intent = new Intent();
-        intent.setClass(getActivity(),offer_detail.class);
+        Intent intent = new Intent(getActivity(),offer_detail.class);
+        //intent.setClass(getActivity(),offer_detail.class);
         startActivity(intent);
     }
 }

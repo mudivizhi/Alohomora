@@ -81,6 +81,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_all_shops:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Category()).commit();
                 break;
+            case R.id.nav_logout:
+                logOutCurrentUser();
+                break;
+            case R.id.nav_saved_coupons:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new AllOffers()).commit();
+                break;
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -106,7 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
 
     }
-    public void logOutCurrentUser(View view){
+    public void logOutCurrentUser(){
         Intent thisIntent = getIntent();
         String signInMethod = thisIntent.getStringExtra("signInMethod");
         if(signInMethod.equals("phone")) {
