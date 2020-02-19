@@ -22,6 +22,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -37,6 +39,7 @@ public class OTPActivity extends AppCompatActivity {
     CountDownTimer cTimer = null;
     private boolean timerFinished = false;
     PhoneAuthProvider.ForceResendingToken token;
+    DatabaseReference db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,6 +62,7 @@ public class OTPActivity extends AppCompatActivity {
         //Toast.makeText(this, verificationID, Toast.LENGTH_SHORT).show();
 
         firebaseAuth = FirebaseAuth.getInstance();
+        db = FirebaseDatabase.getInstance().getReference().child("user-profile");
 
         otp1.addTextChangedListener(new GenericTextWatcher(otp2, otp1));
         otp2.addTextChangedListener(new GenericTextWatcher(otp3, otp2));
@@ -136,6 +140,8 @@ public class OTPActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    LoginActivity loginActObj = new LoginActivity();
+                    loginActObj.createUserInDB(db,"phoneNo",phoneNo);
                     Intent mainIntent = new Intent(OTPActivity.this,MainActivity.class);
                     mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     mainIntent.putExtra("signInMethod", "phone");
