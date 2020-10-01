@@ -27,6 +27,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/1.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/3.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/2.jpg" alt="Logo" width="250" height="450">
+
+
 An android application which displays coupon codes and offers of popular brands
 
 Here's why:
@@ -103,4 +106,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/1.jpg
