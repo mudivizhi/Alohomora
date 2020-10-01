@@ -27,7 +27,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/1.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/3.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/2.jpg" alt="Logo" width="250" height="450">
+<img src="images/1.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/3.jpg" alt="Logo" width="250" height="450">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/2.jpg" alt="Logo" width="250" height="450">
 
 
 An android application which displays coupon codes and offers of popular brands
